@@ -63,4 +63,4 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: Test Results
-          path: TEST_RESULTS_PATH
+          path: TEST_RESULTS
