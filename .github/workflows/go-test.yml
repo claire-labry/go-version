@@ -3,7 +3,7 @@ name: go-test
 on: [push]
 
 env:
-  TEST_RESULTS: ./tmp/test-results
+  TEST_RESULTS: /tmp/test-results
 
 jobs:
 
@@ -63,4 +63,4 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: Test Results
-          path: TEST_RESULTS
+          path: ${{env.TEST_RESULTS}}
