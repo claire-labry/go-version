@@ -1,9 +1,9 @@
-name: go-version
+name: go-test
 
 on: [push]
 
 env:
-  TEST_RESULTS: /tmp/test-results
+  TEST_RESULTS: ./tmp/test-results
 
 jobs:
 
