@@ -51,7 +51,7 @@ jobs:
       
       - name: Install gotestsum
         run: |
-          if [ ${{ matrix.go-version }} == 1.19 ]; then
+          if [ ${{ matrix.go-version }} == 1.15.3 ]; then
               go get gotest.tools/gotestsum@v1.8.2; else
               go install gotest.tools/gotestsum@v1.8.2
           fi 
